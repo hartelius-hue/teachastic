@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Sammen skaber vi mere</title>
+  <desc id="desc">Tre stiliserede mennesker samles i en fælles, opadgående bevægelse – en enkel markering af samarbejde, nysgerrighed og udvikling.</desc>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="86" cy="110" r="19" fill="#F3F5ED"/>
+    <circle cx="234" cy="110" r="19" fill="#F3F5ED"/>
+    <circle cx="160" cy="77" r="24" fill="#C5EC47"/>
+    <path d="M39 224c10-57 38-87 76-87 16 0 30 5 43 14" stroke="#F3F5ED" stroke-width="15"/>
+    <path d="M281 224c-10-57-38-87-76-87-16 0-30 5-43 14" stroke="#F3F5ED" stroke-width="15"/>
+    <path d="M91 232c12-54 35-81 69-81s57 27 69 81" stroke="#C5EC47" stroke-width="18"/>
+    <path d="M71 252c52 34 126 34 178 0" stroke="#C5EC47" stroke-width="10"/>
+    <path d="M160 16v16M128 27l-8-12M192 27l8-12" stroke="#C5EC47" stroke-width="6"/>
+  </g>
+</svg>
