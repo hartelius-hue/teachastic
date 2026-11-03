@@ -185,3 +185,8 @@ h2{letter-spacing:-.04em}
   .filter-btn{padding:10px 9px;font-size:.81rem}
   .filter-result{margin:0 0 18px}
 }
+
+/* Kontrast på den lille brandtekst i den lyse navigation */
+.site-header .brand-name .accent{color:#5a7c07}
+.brand-caption{font-size:.67rem}
+@media(max-width:580px){.brand-caption{font-size:.60rem}}
