@@ -256,3 +256,9 @@ h2{letter-spacing:-.04em}
  .portfolio-card .case-aside .case-label{margin:0 0 14px}
  .portfolio-card .case-aside-icon{width:62px;height:62px;flex:none;margin:0 0 10px}
 }
+
+/* Det valgte workshopmotiv fra den tidligere designvisning */
+.hero .hero-photo img{object-position:55% 44%;filter:none}
+.hero .hero-photo{background:#20382e}
+.hero .hero-afterword{margin:15px 0 0;max-width:480px}
+@media(max-width:580px){.hero .hero-photo img{object-position:55% 45%}}
