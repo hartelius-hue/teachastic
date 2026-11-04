@@ -270,3 +270,12 @@ h2{letter-spacing:-.04em}
 .hero .hero-photo::after{content:none;display:none}
 @media(max-width:850px){.hero .hero-art{width:100%;max-width:700px;margin:10px auto 0}.hero .hero-photo{height:auto;aspect-ratio:929 / 497;border-radius:8px}}
 @media(max-width:580px){.hero .hero-art{min-height:0;margin:8px auto 0}.hero .hero-photo{height:auto;aspect-ratio:929 / 497;border-radius:6px}.hero .hero-photo img{object-position:center;object-fit:contain}}
+
+/* Vis hele workshopmotivet uden indbygget beskæring – 2026-11-04 */
+.hero .hero-grid{grid-template-columns:minmax(0,.94fr) minmax(0,1.06fr);gap:38px;align-items:center}
+.hero .hero-art{position:relative;inset:auto;width:100%;max-width:none;min-height:0;height:auto;display:flex;justify-content:center;align-items:center;margin:0}
+.hero .hero-photo{position:relative;inset:auto;display:block;margin:0;width:100%;height:auto;max-height:none;aspect-ratio:1400 / 933;overflow:hidden;border:0;border-radius:9px;background:#26382f}
+.hero .hero-photo img{display:block;width:100%;height:100%;object-fit:contain;object-position:center center;filter:none;max-height:none}
+.hero .hero-photo::after{content:none;display:none}
+@media(max-width:850px){.hero .hero-grid{grid-template-columns:1fr;gap:25px}.hero .hero-art{width:100%;max-width:690px;margin:0 auto}.hero .hero-photo{height:auto;aspect-ratio:1400 / 933;border-radius:8px}}
+@media(max-width:580px){.hero .hero-grid{grid-template-columns:1fr;gap:19px}.hero .hero-art{width:100%;min-height:0;margin:0 auto}.hero .hero-photo{height:auto;aspect-ratio:1400 / 933;border-radius:7px}.hero .hero-photo img{object-fit:contain;object-position:center}}
