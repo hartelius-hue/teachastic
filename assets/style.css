@@ -243,3 +243,16 @@ h2{letter-spacing:-.04em}
  .hero .hero-afterword{font-size:1.16rem;margin-top:14px}
  .hero .hero-photo-credit{font-size:.66rem}
 }
+
+/* Piktogrammer på casesiden – placeret i det bevidste venstrefelt */
+.portfolio-card .case-aside{grid-column:1;grid-row:1 / span 7;display:flex;flex-direction:column;align-items:flex-start;min-width:0}
+.portfolio-card .case-aside .case-label{grid-column:auto;grid-row:auto;max-width:215px;margin:0;padding-top:6px;line-height:1.6}
+.portfolio-card .case-aside-icon{width:122px;height:122px;display:block;object-fit:contain;margin:29px 0 6px;opacity:.92}
+@media(max-width:850px){
+ .portfolio-card .case-aside-icon{width:108px;height:108px;margin-top:22px}
+}
+@media(max-width:580px){
+ .portfolio-card .case-aside{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:18px}
+ .portfolio-card .case-aside .case-label{margin:0 0 14px}
+ .portfolio-card .case-aside-icon{width:62px;height:62px;flex:none;margin:0 0 10px}
+}
