@@ -221,3 +221,25 @@ h2{letter-spacing:-.04em}
  .case-card:first-child .case-icon{width:124px;margin:16px 0 13px}
  .case-card:not(:first-child) .case-icon{width:90px;height:90px;margin:8px 0}
 }
+
+/* Forside: ægte workshopfoto, fri billedflade og kontrolleret beskæring */
+.hero .hero-art{min-height:0;display:flex;flex-direction:column;align-items:stretch;justify-content:center}
+.hero .hero-photo{position:relative;inset:auto;display:block;width:100%;height:490px;max-height:none;margin:0;overflow:hidden;border-radius:105px 8px 8px 8px;border:0;background:#d6ddd3}
+.hero .hero-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:63% center;filter:saturate(.91) contrast(1.02)}
+.hero .hero-photo::after{content:none}
+.hero .hero-afterword{margin:19px 0 0;font-family:Georgia,serif;font-weight:400;font-size:clamp(1.18rem,1.6vw,1.65rem);line-height:1.4;color:#e8eee8;letter-spacing:-.01em}
+.hero .hero-photo-credit{margin:9px 0 0;font-size:.68rem;letter-spacing:.015em;line-height:1.45;color:#abbeb0}
+@media(max-width:1024px){
+ .hero .hero-photo{height:415px;border-top-left-radius:90px}
+}
+@media(max-width:850px){
+ .hero .hero-art{width:100%;max-width:680px;margin:14px auto 0}
+ .hero .hero-photo{height:410px;border-top-left-radius:85px}
+}
+@media(max-width:580px){
+ .hero .hero-art{min-height:0;margin:9px 0 0}
+ .hero .hero-photo{height:320px;border-radius:58px 7px 7px 7px}
+ .hero .hero-photo img{object-position:64% center}
+ .hero .hero-afterword{font-size:1.16rem;margin-top:14px}
+ .hero .hero-photo-credit{font-size:.66rem}
+}
