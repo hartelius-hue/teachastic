@@ -329,3 +329,42 @@ h2{letter-spacing:-.04em}
   .hero .hero-photo{aspect-ratio:4 / 3;height:100%;border-radius:8px}
   .hero .hero-photo img{object-position:50% 45%}
 }
+
+
+/* Veje til Viden: original portrætgrafik uden beskæring */
+.portfolio-card .portfolio-photo--portrait{
+  grid-column:2;
+  width:min(100%,400px);
+  max-width:100%;
+  margin:17px 0 22px;
+}
+.portfolio-photo--portrait .portfolio-photo-link{
+  display:block;
+  border-radius:9px;
+  overflow:hidden;
+  outline-offset:5px;
+}
+.portfolio-photo--portrait .portfolio-photo-image{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:4 / 5;
+  object-fit:contain;
+  border-radius:9px;
+  box-shadow:0 6px 22px rgba(22,47,27,.09);
+}
+.portfolio-photo--portrait figcaption{
+  line-height:1.6;
+  max-width:400px;
+}
+.portfolio-photo--portrait figcaption a{
+  font-weight:700;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+@media(max-width:580px){
+  .portfolio-card .portfolio-photo--portrait{
+    width:min(100%,400px);
+    margin:14px 0 20px;
+  }
+}
