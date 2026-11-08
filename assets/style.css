@@ -290,3 +290,10 @@ h2{letter-spacing:-.04em}
 .portfolio-photo figcaption{font-size:.78rem;color:#6b786d;line-height:1.5;margin-top:9px}
 @media(max-width:850px){.hero-art{min-height:510px}.hero-photo{inset:15px 0 15px 0}}
 @media(max-width:580px){.hero-art{min-height:340px}.hero-photo{inset:5px 0 5px 0;border-radius:12px}}
+
+/* Bevar hele originalfotoets proportioner på desktop, tablet og mobil. */
+.hero-grid{grid-template-columns:.98fr 1.02fr;gap:50px}
+.hero-art{min-height:0;aspect-ratio:4/3;width:100%}
+.hero-photo{inset:0}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr}.hero-art{min-height:0;aspect-ratio:4/3}.hero-photo{inset:0}}
+@media(max-width:580px){.hero-art{min-height:0;aspect-ratio:4/3}.hero-photo{inset:0}}
