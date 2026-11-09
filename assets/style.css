@@ -394,3 +394,18 @@ h2{letter-spacing:-.04em}
 .portfolio-video .case-video-status{position:absolute;bottom:10px;left:16px;right:16px;color:#fff;font-size:.82rem;text-shadow:0 1px 3px #000;pointer-events:none}
 .portfolio-video figcaption{font-size:.8rem;color:#657367;line-height:1.55;margin-top:9px}
 @media(max-width:580px){.portfolio-card .portfolio-video{margin:15px 0 20px}.portfolio-video .case-video-start{padding:10px 13px;font-size:.87rem;gap:8px}.portfolio-video .case-video-kicker{font-size:.7rem}}
+
+
+/* Forfattercase · kompakt boggalleri med originale fotos og omslag */
+.portfolio-card--author .author-case-layout{grid-column:2;display:grid;grid-template-columns:minmax(0,1fr) minmax(225px,300px);gap:28px;align-items:start;width:100%;min-width:0}
+.portfolio-card--author .author-case-copy{min-width:0}
+.portfolio-card--author .author-case-copy h3{margin:0 0 14px}
+.portfolio-card--author .author-case-copy p{margin:0 0 15px;max-width:62ch}
+.portfolio-card--author .author-case-copy .portfolio-bottom{grid-column:auto;margin-top:20px}
+.portfolio-card--author .author-case-gallery{margin:0;min-width:0;width:100%}
+.portfolio-card--author .author-case-feature{display:block;width:100%;height:172px;object-fit:cover;object-position:center 47%;border-radius:8px}
+.portfolio-card--author .author-case-covers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center;gap:9px;margin-top:10px}
+.portfolio-card--author .author-case-covers img{display:block;box-sizing:border-box;width:100%;height:108px;object-fit:contain;background:#fff;border:1px solid #e0e6dd;border-radius:5px;padding:3px}
+@media(max-width:1120px){.portfolio-card--author .author-case-layout{grid-template-columns:minmax(0,1fr) minmax(210px,260px);gap:20px}}
+@media(max-width:720px){.portfolio-card--author .author-case-layout{grid-template-columns:1fr;gap:18px}.portfolio-card--author .author-case-gallery{max-width:360px}.portfolio-card--author .author-case-feature{height:175px}}
+@media(max-width:580px){.portfolio-card--author .author-case-layout{grid-column:auto}.portfolio-card--author .author-case-gallery{max-width:350px}}
