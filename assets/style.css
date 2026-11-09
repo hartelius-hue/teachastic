@@ -375,3 +375,22 @@ h2{letter-spacing:-.04em}
 .portfolio-card .portfolio-photo figcaption { font-size:.8rem; line-height:1.5; color:#657367; margin-top:9px; }
 .portfolio-card .portfolio-bottom { display:flex; gap:14px 26px; flex-wrap:wrap; }
 @media(max-width:580px) { .portfolio-card .portfolio-photo { width:100%; margin:16px 0 19px; } }
+
+
+/* Case: Kombatan-filmen indlæses først, når brugeren trykker på afspil */
+.portfolio-card .portfolio-video{grid-column:2;max-width:760px;width:100%;margin:17px 0 20px}
+.portfolio-video .case-video-box{position:relative;aspect-ratio:16 / 9;background:#10251e;border-radius:10px;overflow:hidden;color:white}
+.portfolio-video .case-video-cover{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(18px,3vw,32px);background:linear-gradient(110deg,rgba(9,31,23,.96),rgba(9,31,23,.65)),url('case-arnis.svg') center / cover}
+.portfolio-video .case-video-kicker{font-size:.8rem;letter-spacing:.12em;font-weight:800;color:#bdf044}
+.portfolio-video .case-video-title{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.35rem,3vw,2.2rem);font-weight:700;letter-spacing:-.04em;max-width:450px}
+.portfolio-video .case-video-start{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:flex;align-items:center;gap:13px;background:#c5ec47;border:0;border-radius:8px;color:#14231a;padding:12px 21px;font-size:1rem;font-weight:800;white-space:nowrap;cursor:pointer;box-shadow:0 6px 27px #0005}
+.portfolio-video .case-video-start:hover{background:#d9fc73}
+.portfolio-video .case-video-start:focus-visible{outline:3px solid white;outline-offset:4px}
+.portfolio-video .case-video-start:disabled{cursor:wait;opacity:.78}
+.portfolio-video .case-video-playicon{font-size:1.15rem;line-height:1}
+.portfolio-video .case-video-media{display:block;width:100%;height:100%;background:#071710;object-fit:contain}
+.portfolio-video .case-video-media[hidden],.portfolio-video .case-video-start[hidden],.portfolio-video .case-video-cover[hidden]{display:none}
+.portfolio-video .case-video-box.is-ready .case-video-cover{display:none}
+.portfolio-video .case-video-status{position:absolute;bottom:10px;left:16px;right:16px;color:#fff;font-size:.82rem;text-shadow:0 1px 3px #000;pointer-events:none}
+.portfolio-video figcaption{font-size:.8rem;color:#657367;line-height:1.55;margin-top:9px}
+@media(max-width:580px){.portfolio-card .portfolio-video{margin:15px 0 20px}.portfolio-video .case-video-start{padding:10px 13px;font-size:.87rem;gap:8px}.portfolio-video .case-video-kicker{font-size:.7rem}}
