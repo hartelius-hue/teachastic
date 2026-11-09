@@ -409,3 +409,23 @@ h2{letter-spacing:-.04em}
 @media(max-width:1120px){.portfolio-card--author .author-case-layout{grid-template-columns:minmax(0,1fr) minmax(210px,260px);gap:20px}}
 @media(max-width:720px){.portfolio-card--author .author-case-layout{grid-template-columns:1fr;gap:18px}.portfolio-card--author .author-case-gallery{max-width:360px}.portfolio-card--author .author-case-feature{height:175px}}
 @media(max-width:580px){.portfolio-card--author .author-case-layout{grid-column:auto}.portfolio-card--author .author-case-gallery{max-width:350px}}
+
+
+/* Veje til Viden: mindre plakat i casen. Den kan fortsat åbnes i fuld størrelse. */
+#veje .portfolio-photo--portrait{
+  width:min(100%,255px);
+  max-width:255px;
+  justify-self:start;
+}
+#veje .portfolio-photo--portrait .portfolio-photo-image{
+  width:100%;
+  height:auto;
+  aspect-ratio:4 / 5;
+  object-fit:contain;
+}
+@media(max-width:580px){
+  #veje .portfolio-photo--portrait{
+    width:min(100%,215px);
+    max-width:215px;
+  }
+}
